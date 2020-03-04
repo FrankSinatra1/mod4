@@ -340,7 +340,7 @@ div.wpforms-container-full {
 	margin-bottom: 5px;
 }
 
-.content-bottom-widgets .widget-area {
+.content-bottom-widgets .widget-area, .wpforms-container, .wp-block-cover, .section_main {
 	animation: anim 1s;
 }
 
@@ -361,6 +361,11 @@ div.wpforms-container-full {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1475px) {
+	.site-content {
+		margin-top: 100px;
+	}
+}
 
 @media screen and (max-width: 500px) {
 	.content-bottom-widgets .widget-area {
