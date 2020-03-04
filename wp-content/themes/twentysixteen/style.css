@@ -281,7 +281,7 @@ input:focus::placeholder {
     color: #141414 !important;
 }
 
-button {
+.site-inner button, input[type="submit"] {
     background: #0069b4 !important;
     border-radius: 25px !important;
     border: 1px solid #0069b4 !important;
@@ -292,7 +292,7 @@ button {
     width: 100% !important;
 }
 
-button:hover {
+.site-inner button:hover, input[type="submit"]:hover {
     box-shadow: 0 0 12px 0px #0069b4 !important;
 }
 
@@ -314,6 +314,22 @@ div.wpforms-container-full {
     background: #0069b4 !important;
     border: 1px solid #0069b4 !important;
 }
+
+.ezfc-theme-slick .ezfc-success-text {
+	color: #fff !important;
+    background: #0069b4 !important;
+    border: 1px solid #0069b4 !important;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.ezfc-theme-slick .ezfc-success-text  p {
+	margin-bottom: 0 !important;
 }
 
 .textwidget li {
@@ -336,6 +352,24 @@ div.wpforms-container-full {
 	100% {
 		margin-left: 0;
 	}
+}
+
+.section_main {
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+	.content-bottom-widgets .widget-area {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+#colophon {
+	display: none;
 }
 
 
